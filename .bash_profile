@@ -8,12 +8,6 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra,dockerapps,gitc
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 
-# Kubernetes!!!!
-source <(minikube completion bash)
-source <(kubectl completion bash)
-source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
-PS1='$(kube_ps1)'$PS1
-
 unset file;
 
 # Case-insensitive globbing (used in pathname expansion)
