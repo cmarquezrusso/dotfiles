@@ -993,3 +993,6 @@ ASALocalRun/
 healthchecksdb
 
 # End of https://www.gitignore.io/api/go,node,java,maven,macos,linux,puppet,python,ansible,windows,pycharm,terraform,aspnetcore,virtualenv,pycharm+iml,chefcookbook,visualstudio,visualstudiocode
+
+# Disallow commiting keys
+.ssh/id_rsa*
