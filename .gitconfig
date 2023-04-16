@@ -127,7 +127,7 @@
 [commit]
 
 	# https://help.github.com/articles/signing-commits-using-gpg/
-	gpgsign = false
+	gpgsign = true
 
 [diff]
 
@@ -181,3 +181,7 @@
 [init]
 
 	defaultBranch = main
+[user]
+	name = Cristian Marquez russo
+	email = cristian04@gmail.com
+	signingkey = BCFA5A0731B7D635
