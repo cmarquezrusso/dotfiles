@@ -1,1 +1,2 @@
-export PATH=$PATH:~/.asdf/installs/golang/1.20.6/packages/bin/
+export PATH=$PATH:~/.asdf/installs/golang/1.20.6/packages/bin/:/home/linuxbrew/.linuxbrew/bin
+archey
