@@ -1,2 +1,8 @@
-export PATH=$PATH:~/.asdf/installs/golang/1.20.6/packages/bin/:/home/linuxbrew/.linuxbrew/bin
+# set PATH so it includes user's private bin if it exists
+PATH="$HOME/bin:$PATH"
+# set PATH so it includes user's private bin if it exists
+PATH="$HOME/.local/bin:$PATH"
+# Set Goroot in path so we can use the binaries. We are getting the go env as we might be changing versions of go with asdf
+GO_BIN="`go env GOROOT`/bin"
+export PATH="$GO_BIN:/home/linuxbrew/.linuxbrew/bin:$PATH"
 archey
